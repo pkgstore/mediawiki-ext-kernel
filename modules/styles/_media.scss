@@ -1,0 +1,15 @@
+@media (max-width: 1087px) {
+  *[class^='mw-'] {
+    &[class$='-box'] {
+      max-width: unset;
+
+      > div[class$='-body'] {
+        display: block;
+
+        > div[class$='-icon'] {
+          display: none;
+        }
+      }
+    }
+  }
+}

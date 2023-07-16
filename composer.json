@@ -1,0 +1,48 @@
+{
+  "name": "pkgstore/mediawiki-ext-kernel",
+  "type": "mediawiki-extension",
+  "description": "MediaWiki CMF Store kernel extension.",
+  "license": "MIT",
+  "homepage": "https://ihub.to/",
+  "keywords": [
+    "mediawiki",
+    "kernel"
+  ],
+  "authors": [
+    {
+      "name": "iHub TO",
+      "email": "mail@ihub.to",
+      "homepage": "https://ihub.to/",
+      "role": "Developer"
+    },
+    {
+      "name": "Kitsune Solar",
+      "email": "mail@kitsune.solar",
+      "homepage": "https://kitsune.solar/",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/pkgstore/mediawiki-ext-kernel/issues",
+    "source": "https://github.com/pkgstore/mediawiki-ext-kernel"
+  },
+  "require": {
+    "composer/installers": "^1.0.1",
+    "ext-json": "*",
+    "ext-xml": "*",
+    "ext-yaml": "*",
+    "php": ">=8.2"
+  },
+  "autoload": {
+    "classmap": [
+      "MW_EXT_Kernel.class.php"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "prepend-autoloader": false
+  },
+  "extra": {
+    "installer-name": "MW_EXT_Kernel"
+  }
+}
